@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Row } from 'react-materialize';
 
 class App extends Component {
   render() {
@@ -7,9 +8,9 @@ class App extends Component {
     return (
       <div className="container">
         <h1>Projects</h1>
-        <div className="row">
+        <Row>
           {children}
-        </div>
+        </Row>
       </div>
     );
   }

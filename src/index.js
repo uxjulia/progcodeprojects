@@ -5,7 +5,6 @@ import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 require('./favicon.ico');
 
-import 'materialize-css/bin/materialize.css';
 import './styles/main.scss';
 
 
