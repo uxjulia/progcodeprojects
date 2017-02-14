@@ -32,3 +32,17 @@
   }
 }
 
+/// Stack Icon colors
+@mixin icon-color($background, $border) {
+  background-color: $background;
+  border: 1px solid $border;
+}
+
+/// Clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,8 +1,26 @@
+// -----------------------------------------------------------------------------
+// ProjectCard Component Styles
+// -----------------------------------------------------------------------------
+
+
 .card {
   height: 350px;
   width: 300px;
 
   &-content {
     overflow: auto;
+    @include clearfix;
+  }
+
+  &-links {
+    margin-right: 5px;
+
+    &-website {
+      color: $emberRed;
+    }
+
+    &-github {
+      color: $githubGray;
+    }
   }
 }

@@ -27,10 +27,12 @@ const ProjectCard = (props) => {
   return (
     <Col m={4}>
       <Card
+        className="hoverable"
         header={header}
         title={data['Project Name']}
         reveal={content}>
-        <p className=""><a href={data['Website']} target="_blank">{data['Website']}</a></p>
+        <a className="card-links card-links-website" href={data['Website']} target="_blank"> {data['Website']} </a>
+        <a className="card-links card-links-github" href={data['Website']} target="_blank"> Github </a>
       </Card>
     </Col>
   );

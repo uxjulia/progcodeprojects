@@ -3,13 +3,14 @@ import React from 'react';
 const StackIcons =  (props) => {
   let { data } = props;
   let icons;
+  let reg = /\.[a-z]+|\s/g
 
   if (data) {
-    icons = data.map( (item, i) => <div key={i} className="icon"><span className={item}><span/></span></div>  );
+    icons = data.map( (item, i) => <span key={i} className={`stack-icon stack-icon--${item.toLowerCase().trim().replace(reg, '')}`}>{item}</span>  );
   }
 
   return(
-    <div className=""> {icons} </div>
+    <div className="stack"> {icons} </div>
   );
 };
 

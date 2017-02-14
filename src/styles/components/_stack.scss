@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// StackIcon Component Styles
+// -----------------------------------------------------------------------------
+
+.stack {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5px;
+
+  &-icon {
+    background-color: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 0 5px;
+    text-transform: capitalize;
+    padding: 5px;
+
+    &--ios, &--html, &--css, &--javascript, &--sass , &--jquery, &--om {
+      @include icon-color($expressWhite, $expressWhite);
+    }
+
+    &--node, &--mongodb,  &--android, &--droid {
+      @include icon-color($androidGreen, $androidGreen);
+    }
+
+    &--python, &--django, &--flask {
+      @include icon-color($pythonYellow, $pythonYellow);
+    }
+
+    &--postgress, &--postgressql, &--mysql, &--sql, &--ql, &--etl {
+      @include icon-color($sqlOrange, $sqlOrange);
+    }
+
+    &--react, &--redux, &--mobx, &--heroku {
+      @include icon-color($reactBlue, $reactBlue);
+    }
+
+    &--ember, &--swift, &--ruby, &--rails {
+      @include icon-color($emberRed, $emberRed);
+    }
+
+    &--firebase, &--go, &--elixir, &--phoenix {
+      @include icon-color($firebaseYellow, $firebaseYellow);
+    }
+  }
+}

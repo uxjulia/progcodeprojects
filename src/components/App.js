@@ -7,7 +7,7 @@ class App extends Component {
 
     return (
       <div className="container">
-        <h1>Projects</h1>
+        <h1 className="text-center">Projects we support: </h1>
         <Row>
           {children}
         </Row>
